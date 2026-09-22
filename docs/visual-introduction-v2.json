@@ -1,0 +1,21 @@
+{
+  "version": "visual-introduction-v2",
+  "company_rooms_under_management": 4500,
+  "company_scale_source": "Explicit figure supplied by Keith on 22 September 2026; not inferred from the eight-property report",
+  "performance_scope": "Eight-property case study only, separate from company-wide scale",
+  "removed_cards": [
+    "2278 tenants",
+    "896 rooms"
+  ],
+  "review_display": "Original company-profile snapshot, not live; source verification date unavailable",
+  "google_logo_source": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  "google_usage_guidance": "https://partnermarketinghub.withgoogle.com/brands/google/use-cases/customer-reviews/",
+  "changes": [
+    "Real team photo and six interactive functions",
+    "Google wordmark linking to the existing Maps listing",
+    "Three compact results cards with visible scope",
+    "Expandable methodology and fee explanation",
+    "Shortened service, introduction and testimonial copy"
+  ],
+  "original_MVertica_modified": false
+}

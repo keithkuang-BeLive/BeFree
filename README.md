@@ -25,3 +25,8 @@ Google review figures and selected collaboration logos are retained from the ori
 `scripts/create-portfolio.py` applies the documented content changes to the pinned original compiled template. It does not claim to recover the original editable React/TypeScript source. Use the accompanying workflow to rebuild from that pinned reference. The supplied raw portfolio report is not published.
 
 This is a draft and carries `noindex,nofollow` until approved for launch.
+
+
+## Visual-first revision
+
+The introduction now shows **4,500 rooms under management**, a company-wide figure explicitly supplied by Keith on 22 September 2026. It is not derived from the eight-property report. The 2,278-tenants and 896-rooms promotional cards were removed. Case-study performance remains separately labelled. A real team photo, six interactive team functions and an unmodified Google wordmark replace text-heavy introductory blocks. Review figures remain an explicitly labelled non-live company-profile snapshot. Run `python scripts/refine-introduction.py` after `scripts/create-portfolio.py` to reproduce this revision.
