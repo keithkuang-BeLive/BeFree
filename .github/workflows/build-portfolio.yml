@@ -5,7 +5,9 @@ on:
     paths:
       - '.github/workflows/build-portfolio.yml'
       - 'scripts/create-portfolio.py'
-      - 'scripts/verify-portfolio.cjs'
+      - 'scripts/refine-introduction.py'
+      - 'scripts/visual-introduction.css'
+      - 'scripts/verify-visual-introduction.cjs'
 permissions:
   contents: write
 concurrency:
@@ -20,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Read approved template without modifying its repository
+      - name: Read the approved template without modifying its repository
         uses: actions/checkout@v4
         with:
           repository: keithkuang-BeLive/BeFree-MVertica
@@ -30,36 +32,44 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Apply portfolio copy and build both preview formats
+      - name: Apply portfolio data and the visual-first introduction
         run: |
           python scripts/create-portfolio.py _template
+          python scripts/refine-introduction.py
           node --check public/assets/index-CHKnvv48.js
           npm run build
       - name: Install isolated browser verification dependency
         run: |
           npm install --no-save --package-lock=false playwright@1.55.1
           npx playwright install --with-deps chromium
-      - name: Verify desktop, mobile, all three languages and interactions
-        run: node scripts/verify-portfolio.cjs
-      - name: Store verified results
+      - name: Verify both website formats, three languages and mobile interactions
+        run: node scripts/verify-visual-introduction.cjs
+      - name: Publish only the tested website files
+        id: publish
         run: |
           cp verification/browser-report.json docs/browser-verification.json
           git config user.name 'BeFree Website Builder'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public index.html docs README.md .gitignore package.json vercel.json scripts/build.mjs scripts/serve.mjs
-          git diff --cached --quiet || git commit -m 'Publish verified BeFree portfolio website with original template preserved'
+          git diff --cached --quiet || git commit -m 'Publish visual-first BeFree: 4500 rooms, complete team, Google reviews and shorter copy'
           git push origin HEAD:main
-          echo 'Website preview: https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html' >> "$GITHUB_STEP_SUMMARY"
-          echo 'Vercel: Other / npm run build / dist' >> "$GITHUB_STEP_SUMMARY"
-      - name: Save browser screenshots and generated site for review
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Verify the published preview in a real browser
+        run: node scripts/verify-visual-introduction.cjs --remote "https://raw.githack.com/keithkuang-BeLive/BeFree/${{ steps.publish.outputs.sha }}/index.html"
+      - name: Store public-preview verification
+        run: |
+          cp verification/public-preview-v2.json docs/public-preview-verification.json
+          git add docs/public-preview-verification.json
+          git diff --cached --quiet || git commit -m 'Confirm revised BeFree public preview across languages and screen sizes'
+          git push origin HEAD:main
+          echo 'Preview: https://raw.githack.com/keithkuang-BeLive/BeFree/${{ steps.publish.outputs.sha }}/index.html' >> "$GITHUB_STEP_SUMMARY"
+      - name: Save the revised website and review screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: befree-website-review
+          name: befree-visual-introduction-review
           path: |
             verification/
             public/
-            index.html
             docs/
-            scripts/create-portfolio.py
           retention-days: 7
