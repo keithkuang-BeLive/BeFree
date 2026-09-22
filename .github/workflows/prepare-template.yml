@@ -1,0 +1,23 @@
+name: Prepare BeFree template
+on:
+  push:
+    paths: [.github/workflows/prepare-template.yml]
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: keithkuang-BeLive/BeFree-MVertica
+          ref: 3d0fe6d7ea613508f2d23261bbbb34e714a46c62
+      - uses: actions/upload-artifact@v4
+        with:
+          name: befree-template
+          path: |
+            public/
+            scripts/
+            package.json
+            vercel.json
+          retention-days: 2
