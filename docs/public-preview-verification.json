@@ -1,0 +1,17 @@
+{
+  "url": "https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html",
+  "status": "passed",
+  "messagesSent": 0,
+  "videoPlaybackTested": false,
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "firstVisitNotice": true,
+  "openedUrl": "https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html?lang=en",
+  "title": "BeFree by BeLive | More Time for Life",
+  "heading": "You worked for a better life.\nMake time to live it.",
+  "metrics": true,
+  "images": 20,
+  "javascriptErrors": [],
+  "languageSwitch": true,
+  "mobileOverflow": false
+}
