@@ -1,0 +1,20 @@
+{
+  "brand": "BeFree by BeLive",
+  "source": "User-supplied portfolio-report(1).html",
+  "scope": "Eight-property portfolio only; not company-wide",
+  "extracted": "15–18 September 2026",
+  "lettable_rooms": 896,
+  "active_units": 195,
+  "properties": 8,
+  "september_occupancy_percent": 95.5,
+  "rooms_with_tenancy_in_september": 856,
+  "renewal_percent_2026": 57.3,
+  "expiring_contracts_2026": 1019,
+  "tenants_housed_to_date_as_reported": 2278,
+  "highest_recorded_monthly_unit_room_rent_RM": 5750,
+  "occupancy_definition": "At least one day covered by a tenancy in the month; September is in progress",
+  "income_definition": "Current contracted room rents summed per unit, before costs; excludes car park and other charges. Individual maximum, not typical or guaranteed.",
+  "review_numbers": "Retained original-template figures, not live or derived from the portfolio report",
+  "template_commit": "3d0fe6d7ea613508f2d23261bbbb34e714a46c62",
+  "original_template_js_sha256": "d780a9abd37f9a41251372b5dcfc0d286fa2d7768b5522fa24a999d951b43ebb"
+}

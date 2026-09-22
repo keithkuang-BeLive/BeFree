@@ -1,0 +1,971 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "website-en-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | More Time for Life"
+    },
+    {
+      "name": "website-en-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-en-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-en-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-en-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-en-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-zh-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive｜物业有托付，生活更从容"
+    },
+    {
+      "name": "website-zh-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-zh-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-zh-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-zh-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-zh-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-ms-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | Lebih Masa untuk Hidup"
+    },
+    {
+      "name": "website-ms-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-ms-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-ms-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-ms-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-ms-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-en-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | More Time for Life"
+    },
+    {
+      "name": "website-en-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-en-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-en-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-en-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-en-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-zh-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive｜物业有托付，生活更从容"
+    },
+    {
+      "name": "website-zh-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-zh-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-zh-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-zh-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-zh-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-ms-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | Lebih Masa untuk Hidup"
+    },
+    {
+      "name": "website-ms-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "website-ms-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "website-ms-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "website-ms-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "website-ms-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-en-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | More Time for Life"
+    },
+    {
+      "name": "single-file-en-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-en-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-en-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-en-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-zh-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive｜物业有托付，生活更从容"
+    },
+    {
+      "name": "single-file-zh-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-zh-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-zh-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-zh-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-ms-390 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | Lebih Masa untuk Hidup"
+    },
+    {
+      "name": "single-file-ms-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-ms-390 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-ms-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 menu opens",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 menu closes after navigation",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-390 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-ms-390 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-en-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | More Time for Life"
+    },
+    {
+      "name": "single-file-en-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-en-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-en-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-en-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-en-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-zh-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive｜物业有托付，生活更从容"
+    },
+    {
+      "name": "single-file-zh-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-zh-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-zh-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-zh-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-zh-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-ms-1440 title",
+      "pass": true,
+      "detail": "BeFree by BeLive | Lebih Masa untuk Hidup"
+    },
+    {
+      "name": "single-file-ms-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 portfolio metrics",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 no old performance numbers",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "single-file-ms-1440 all in-page links have targets",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 WhatsApp links use correct number and generic text",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "single-file-ms-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 carousel next",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 carousel previous",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 language switch",
+      "pass": true
+    },
+    {
+      "name": "single-file-ms-1440 JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "single-file-ms-1440 local resource errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "website-en-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "website-zh-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "website-ms-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "website-en-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "website-zh-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "website-ms-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-en-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-zh-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-ms-390",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-en-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-zh-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "label": "single-file-ms-1440",
+      "images": 20,
+      "whatsappLinks": 8,
+      "errors": [],
+      "localFailures": []
+    }
+  ],
+  "messagesSent": 0,
+  "videoPlaybackTested": false,
+  "passed": 204,
+  "failed": 0
+}
