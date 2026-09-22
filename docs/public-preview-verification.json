@@ -1,17 +1,1176 @@
 {
-  "url": "https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html",
+  "version": "visual-introduction-v2",
   "status": "passed",
+  "checks": [
+    {
+      "name": "public-preview HTTP response",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "public-preview-en-1440 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-en-1440 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-zh-1440 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-ms-1440 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-1440 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-en-390 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-390 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-zh-390 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-390 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-ms-390 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-390 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-en-320 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-en-320 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-zh-320 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-zh-320 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 company rooms",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 removed old promotional cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 exactly one company introduction",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 only three case-study cards",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 case-study metrics retained",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 all images load",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "public-preview-ms-320 Google original wordmark",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 Google review destination",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 Google no decorative rating stars",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 review snapshot qualifier visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 case-study scope visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 fee qualification visible",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 method collapsed initially",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 method expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 fee explanation expandable",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 3",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 4",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 role 5",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 six different role descriptions",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 support tab 0",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 support tab 1",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 support tab 2",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 all internal links resolve",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 WhatsApp actions retain contact",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 no condo-specific visible text",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "public-preview-ms-320 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "public-preview no JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "public-preview no failed same-origin resources",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "public-preview-en-1440",
+      "images": 20,
+      "visibleWords": 683
+    },
+    {
+      "label": "public-preview-zh-1440",
+      "images": 20,
+      "visibleWords": 222
+    },
+    {
+      "label": "public-preview-ms-1440",
+      "images": 20,
+      "visibleWords": 652
+    },
+    {
+      "label": "public-preview-en-390",
+      "images": 20,
+      "visibleWords": 641
+    },
+    {
+      "label": "public-preview-zh-390",
+      "images": 20,
+      "visibleWords": 206
+    },
+    {
+      "label": "public-preview-ms-390",
+      "images": 20,
+      "visibleWords": 610
+    },
+    {
+      "label": "public-preview-en-320",
+      "images": 20,
+      "visibleWords": 641
+    },
+    {
+      "label": "public-preview-zh-320",
+      "images": 20,
+      "visibleWords": 206
+    },
+    {
+      "label": "public-preview-ms-320",
+      "images": 20,
+      "visibleWords": 610
+    }
+  ],
   "messagesSent": 0,
   "videoPlaybackTested": false,
-  "httpStatus": 200,
-  "contentType": "text/html",
   "firstVisitNotice": true,
-  "openedUrl": "https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html?lang=en",
-  "title": "BeFree by BeLive | More Time for Life",
-  "heading": "You worked for a better life.\nMake time to live it.",
-  "metrics": true,
-  "images": 20,
-  "javascriptErrors": [],
-  "languageSwitch": true,
-  "mobileOverflow": false
+  "previewUrl": "https://raw.githack.com/keithkuang-BeLive/BeFree/d3afe5dc02f9811ca02665878478175cb5b95205/index.html",
+  "openedUrl": "https://raw.githack.com/keithkuang-BeLive/BeFree/d3afe5dc02f9811ca02665878478175cb5b95205/index.html?lang=en",
+  "passed": 276,
+  "failed": 0
 }
