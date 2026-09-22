@@ -1,0 +1,65 @@
+name: Build and verify BeFree portfolio website
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-portfolio.yml'
+      - 'scripts/create-portfolio.py'
+      - 'scripts/verify-portfolio.cjs'
+permissions:
+  contents: write
+concurrency:
+  group: befree-portfolio-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Read BeFree repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Read approved template without modifying its repository
+        uses: actions/checkout@v4
+        with:
+          repository: keithkuang-BeLive/BeFree-MVertica
+          ref: 3d0fe6d7ea613508f2d23261bbbb34e714a46c62
+          path: _template
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Apply portfolio copy and build both preview formats
+        run: |
+          python scripts/create-portfolio.py _template
+          node --check public/assets/index-CHKnvv48.js
+          npm run build
+      - name: Install isolated browser verification dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Verify desktop, mobile, all three languages and interactions
+        run: node scripts/verify-portfolio.cjs
+      - name: Store verified results
+        run: |
+          cp verification/browser-report.json docs/browser-verification.json
+          git config user.name 'BeFree Website Builder'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public index.html docs README.md .gitignore package.json vercel.json scripts/build.mjs scripts/serve.mjs
+          git diff --cached --quiet || git commit -m 'Publish verified BeFree portfolio website with original template preserved'
+          git push origin HEAD:main
+          echo 'Website preview: https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Vercel: Other / npm run build / dist' >> "$GITHUB_STEP_SUMMARY"
+      - name: Save browser screenshots and generated site for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: befree-website-review
+          path: |
+            verification/
+            public/
+            index.html
+            docs/
+            scripts/create-portfolio.py
+          retention-days: 7
