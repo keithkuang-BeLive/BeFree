@@ -40,7 +40,7 @@ jobs:
               report.languageRoutes.push({path:'/'+lang,status:r.status,finalUrl:r.url,correctLanguage:new URL(r.url).searchParams.get('lang')===lang});
             }
             report.assetIdentityPassed=report.assets.length>=2&&report.assets.every(x=>x.status===200&&x.matchesApprovedRepository);
-            report.statusPassed=response.ok()&&report.assetIdentityPassed&&report.languageRoutes.every(x=>x.status===200&&x.correctLanguage);
+            report.statusPassed=response.ok&&report.assetIdentityPassed&&report.languageRoutes.every(x=>x.status===200&&x.correctLanguage);
             fs.writeFileSync('verification/vercel-deployment-inspection.json',JSON.stringify(report,null,2));
             console.log('LIVE_DEPLOYMENT_INSPECTION '+JSON.stringify(report));
             if(!report.statusPassed)process.exitCode=1;
