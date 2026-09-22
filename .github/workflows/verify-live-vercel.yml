@@ -1,0 +1,72 @@
+name: Verify live BeFree on Vercel
+on:
+  push:
+    branches: [qa/vercel-live-check-20260922]
+    paths: [.github/workflows/verify-live-vercel.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check live response, language routes and deployed asset identity
+        run: |
+          mkdir -p verification
+          node <<'JS'
+          const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+          (async()=>{
+            const base='https://befree-liart.vercel.app/';
+            const response=await fetch(base+'?lang=en',{signal:AbortSignal.timeout(30000)});
+            const html=await response.text();
+            const report={checkedAt:new Date().toISOString(),url:response.url,status:response.status,contentType:response.headers.get('content-type'),xRobotsTag:response.headers.get('x-robots-tag'),title:html.match(/<title>([\s\S]*?)<\/title>/i)?.[1],metaTags:[...html.matchAll(/<meta\b[^>]*>/gi)].map(x=>x[0]),canonical:html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i)?.[0]||null,assets:[],languageRoutes:[]};
+            const refs=[...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css)(?:\?[^"']*)?)["']/g)].map(x=>x[1]);
+            const root=path.resolve('public');
+            for(const ref of [...new Set(refs)]){
+              const u=new URL(ref,base);if(u.origin!==new URL(base).origin)continue;
+              const p=path.resolve(root,'.'+decodeURIComponent(u.pathname));if(!p.startsWith(root+path.sep))continue;
+              const r=await fetch(u,{signal:AbortSignal.timeout(30000)}),body=Buffer.from(await r.arrayBuffer());
+              const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+              report.assets.push({path:u.pathname,status:r.status,bytes:body.length,sha256:sha(body),matchesApprovedRepository:fs.existsSync(p)&&sha(body)===sha(fs.readFileSync(p))});
+            }
+            for(const lang of ['en','zh','ms']){
+              const r=await fetch(base+lang,{signal:AbortSignal.timeout(15000)});
+              report.languageRoutes.push({path:'/'+lang,status:r.status,finalUrl:r.url,correctLanguage:new URL(r.url).searchParams.get('lang')===lang});
+            }
+            report.assetIdentityPassed=report.assets.length>=2&&report.assets.every(x=>x.status===200&&x.matchesApprovedRepository);
+            report.statusPassed=response.ok()&&report.assetIdentityPassed&&report.languageRoutes.every(x=>x.status===200&&x.correctLanguage);
+            fs.writeFileSync('verification/vercel-deployment-inspection.json',JSON.stringify(report,null,2));
+            console.log('LIVE_DEPLOYMENT_INSPECTION '+JSON.stringify(report));
+            if(!report.statusPassed)process.exitCode=1;
+          })().catch(e=>{console.error(e);process.exitCode=1;});
+          JS
+      - name: Prepare browser
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Test the real Vercel address on desktop and mobile in three languages
+        run: node scripts/verify-visual-introduction.cjs --remote 'https://befree-liart.vercel.app/?lang=en'
+      - name: Record compact results
+        if: always()
+        run: |
+          node <<'JS'
+          const fs=require('node:fs');
+          for(const file of ['verification/vercel-deployment-inspection.json','verification/public-preview-v2.json']){
+            if(!fs.existsSync(file))continue;
+            const r=JSON.parse(fs.readFileSync(file,'utf8'));
+            console.log('VERIFICATION_SUMMARY '+JSON.stringify(file.includes('inspection')?r:{url:r.previewUrl,status:r.status,passed:r.passed,failed:r.failed,failures:r.checks.filter(c=>!c.pass),scenarios:r.scenarios,messagesSent:r.messagesSent,videoPlaybackTested:r.videoPlaybackTested}));
+          }
+          JS
+      - name: Save results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: befree-live-vercel-verification
+          path: verification/
+          retention-days: 7
