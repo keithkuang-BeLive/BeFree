@@ -1,0 +1,68 @@
+name: Check public BeFree website preview
+on:
+  push:
+    paths: ['.github/workflows/check-preview-link.yml']
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Open the actual public preview in a browser
+        run: |
+          mkdir -p verification
+          cat > verification/remote.cjs <<'JS'
+          const {chromium}=require('playwright');
+          const fs=require('node:fs');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const report={url:'https://raw.githack.com/keithkuang-BeLive/BeFree/main/index.html',status:'failed',messagesSent:0,videoPlaybackTested:false};
+            try{
+              const page=await browser.newPage({viewport:{width:1440,height:900}});
+              await page.route(/youtube\.com|youtube-nocookie\.com/,r=>r.abort());
+              const errors=[];page.on('pageerror',e=>errors.push(e.message));
+              const response=await page.goto(report.url,{waitUntil:'domcontentloaded',timeout:120000});
+              report.httpStatus=response.status();report.contentType=response.headers()['content-type'];
+              await page.locator('h1').waitFor({timeout:60000});
+              await page.evaluate(()=>document.querySelectorAll('img').forEach(i=>i.loading='eager'));
+              await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0),null,{timeout:60000});
+              report.title=await page.title();
+              report.heading=await page.locator('h1').innerText();
+              report.metrics=['95.5','57.3','896','2,278','195','RM5,750'].every(n=>true);
+              const text=await page.locator('body').innerText();report.metrics=['95.5','57.3','896','2,278','195','RM5,750'].every(n=>text.includes(n));
+              report.images=await page.locator('img').count();report.javascriptErrors=errors;
+              await page.screenshot({path:'verification/public-preview-desktop.png'});
+              await page.setViewportSize({width:390,height:900});
+              await page.locator('.language-picker select').selectOption('zh');
+              report.languageSwitch=await page.locator('.site-shell').getAttribute('data-language')==='zh';
+              await page.locator('.language-picker select').selectOption('en');
+              report.mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
+              await page.screenshot({path:'verification/public-preview-mobile.png'});
+              report.status=response.ok()&&report.metrics&&report.languageSwitch&&!report.mobileOverflow&&errors.length===0?'passed':'failed';
+            }catch(e){report.error=e.message;}finally{await browser.close();fs.writeFileSync('verification/public-preview.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));}
+            if(report.status!=='passed')process.exitCode=1;
+          })();
+          JS
+          node verification/remote.cjs
+      - name: Save public-link verification
+        run: |
+          cp verification/public-preview.json docs/public-preview-verification.json
+          git config user.name 'BeFree Website Builder'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/public-preview-verification.json
+          git diff --cached --quiet || git commit -m 'Verify the public BeFree website link on desktop and mobile'
+          git push origin HEAD:main
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-preview-check
+          path: verification/
+          retention-days: 7
