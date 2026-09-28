@@ -41,7 +41,7 @@ const server = http.createServer((req,res) => {
    const anchors=await page.locator('a[href^="#"]').evaluateAll(a=>a.map(e=>({href:e.getAttribute('href'),exists:!!document.querySelector(e.getAttribute('href'))})));
    check(label+' all in-page links have targets',anchors.every(a=>a.exists));
    const wa=await page.locator('a[href*="wa.me"]').evaluateAll(a=>a.map(e=>e.href));
-   check(label+' WhatsApp links use correct number and generic text',wa.length>=6&&wa.every(a=>a.startsWith('https://wa.me/601110854123?text=')&&!/M Vertica|Taman Maluri/i.test(decodeURIComponent(a))),wa.length);
+   check(label+' WhatsApp links use correct number and generic text',wa.length>=6&&wa.every(a=>a.startsWith('https://wa.me/60103154260?text=')&&!/M Vertica|Taman Maluri/i.test(decodeURIComponent(a))),wa.length);
    for(let i=0;i<3;i++){
     const tab=page.locator('.support-tabs [role="tab"]').nth(i);await tab.click();
     check(label+' support tab '+i,await tab.getAttribute('aria-selected')==='true');
