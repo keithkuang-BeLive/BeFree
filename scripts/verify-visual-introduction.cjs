@@ -52,7 +52,7 @@ async function main(){
     check(label+' six different role descriptions',descriptions.size===6);await buttons.nth(1).click();
     const support=page.locator('.support-tabs button');for(let i=0;i<3;i++){await support.nth(i).click();check(label+' support tab '+i,await support.nth(i).getAttribute('aria-selected')==='true');}await support.nth(0).click();
     check(label+' all internal links resolve',await page.locator('a[href^="#"]').evaluateAll(as=>as.filter(a=>a.getAttribute('href').length>1).every(a=>document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))))));
-    check(label+' WhatsApp actions retain contact',await page.locator('a[href*="wa.me"]').evaluateAll(as=>as.length>=5&&as.every(a=>a.href.includes('601110854123'))));
+    check(label+' WhatsApp actions retain contact',await page.locator('a[href*="wa.me"]').evaluateAll(as=>as.length>=5&&as.every(a=>a.href.includes('60103154260'))));
     check(label+' no condo-specific visible text',!/(M Vertica|AraTre|Taman Maluri|Austin Regency|Nexus Residence)/i.test(text));
     if(width<700){const menu=page.locator('button.mobile-menu');await menu.click();check(label+' mobile menu opens',await menu.getAttribute('aria-expanded')==='true');await menu.click();check(label+' mobile menu closes',await menu.getAttribute('aria-expanded')==='false');}
     if(lang==='en'&&(width===1440||width===390)){
